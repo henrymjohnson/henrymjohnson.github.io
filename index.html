@@ -1,37 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Henry Johnson's Portfolio</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
         }
         .header {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #f8f9fa;
-            padding: 10px;
-            font-size: 1.2em;
-            position: sticky;
-            top: 0;
-            z-index: 1000; /* Ensures the header stays on top of other content */
-        }
-        .main-content {
-            flex: 1;
-            display: flex;
-            padding-top: 60px; /* Adjust this to the height of your header to ensure content isn't hidden beneath it */
-        }
-        .left-column {
-            flex-basis: 30%;
+            background-color: #f8f8f8;
+            text-align: center;
             padding: 20px;
-            height: calc(100vh - 60px); /* Subtracting the header height */
-            position: sticky;
-            top: 60px; /* Adjust this to the height of your header to ensure the column starts beneath it */
-            overflow: auto;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+        .content {
+            display: flex;
+            margin-top: 80px; /* Adjust this value according to the height of your header */
+        }
+        .left {
+            flex: 33%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .right {
+            flex: 67%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Henry Johnson's Portfolio</h1>
+    </div>
+    <div class="content">
+        <div class="left">
+            <h2>About Me</h2>
+            <img src="/assets/images/bio-photo.png" alt="Henry Johnson" style="width:100%">
+            <p>Henry is a data scientist and lover of economics, plants, mountain biking, and food. He specializes in machine learning, data mining, and statistical modeling.</p>
+        </div>
+        <div class="right">
+            <h2>My Work</h2>
+            <p>Here is a sample of my work:</p>
+            <a href="https://henrymjohnson.github.io/notebooks/Predicting%20Movie%20Genres%20from%20Movie%20Scripts.html">Classifying Movie Genres</a>
+        </div>
+    </div>
+</body>
+</html>
