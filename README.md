@@ -1,2 +1,2 @@
-# hennrymjohnson.github.io
+# henrymjohnson.github.io
 Portfolio
