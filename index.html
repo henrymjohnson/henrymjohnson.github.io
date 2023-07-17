@@ -3,32 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+    <title>Henry Johnson's Portfolio</title>
     <!-- Link to Bootstrap 4 CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+        }
+        .container {
+            flex: 1;
+            display: flex;
+        }
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        .left-column {
+            flex-basis: 30%;
+            padding: 20px;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            overflow: auto;
+        }
+        .right-column {
+            flex-basis: 70%;
+            padding: 20px;
+            overflow: auto;
+        }
+    </style>
 </head>
 <body>
+    <div class="header">
+        <h1>Henry Johnson</h1>
+        <a href="URL_TO_YOUR_CV.md">Full CV</a>
+    </div>
     <div class="container">
-        <h1>Your Name Here</h1>
-        <h2>Skills</h2>
-        <ul>
-            <li>Python, SQL, BigQuery, GCP, VSCode, Postman</li>
-            <!-- Other skills here -->
-        </ul>
-
-        <h2>Education</h2>
-        <p>Boise State University, MS in Economics • Dec 2022 (GPA 3.8)</p>
-        <!-- Other educations here -->
-
-        <h2>Projects</h2>
-        <p>Risk Scorecard (Fitted) • Discontinued/Anticipated May 2023 - July 2023</p>
-        <!-- Other projects here -->
-
-        <h2>Work Experience</h2>
-        <p>Fitted - SQL/Quality Assurance Engineer • May 2022 - May 2023</p>
-        <!-- Other work experiences here -->
-
-        <!-- Add other sections like Awards, Certifications, Leadership, etc. below -->
+        <div class="left-column">
+            <h2>About Me</h2>
+            <p>Your position and a description of your interests</p>
+            <h2>Contact</h2>
+            <ul>
+                <li><a href="URL_TO_YOUR_LINKEDIN">LinkedIn</a></li>
+                <li><a href="URL_TO_YOUR_GITHUB">GitHub</a></li>
+            </ul>
+        </div>
+        <div class="right-column">
+            <h2>Projects</h2>
+            <!-- You can copy and paste the "project" div for each project you want to add. -->
+            <div class="project">
+                <h3>Project Name</h3>
+                <p>Project summary...</p>
+                <a href="URL_TO_PROJECT">Link to project</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
