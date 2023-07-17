@@ -4,16 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Henry Johnson's Portfolio</title>
-    <!-- Link to Bootstrap 4 CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             display: flex;
+            flex-direction: column;
             min-height: 100vh;
-        }
-        .container {
-            flex: 1;
-            display: flex;
         }
         .header {
             width: 100%;
@@ -21,47 +17,21 @@
             justify-content: space-between;
             align-items: center;
             background-color: #f8f9fa;
-            padding: 20px;
+            padding: 10px;
+            font-size: 1.2em;
+            position: sticky;
+            top: 0;
+            z-index: 1000; /* Ensures the header stays on top of other content */
+        }
+        .main-content {
+            flex: 1;
+            display: flex;
+            padding-top: 60px; /* Adjust this to the height of your header to ensure content isn't hidden beneath it */
         }
         .left-column {
             flex-basis: 30%;
             padding: 20px;
-            height: 100vh;
+            height: calc(100vh - 60px); /* Subtracting the header height */
             position: sticky;
-            top: 0;
+            top: 60px; /* Adjust this to the height of your header to ensure the column starts beneath it */
             overflow: auto;
-        }
-        .right-column {
-            flex-basis: 70%;
-            padding: 20px;
-            overflow: auto;
-        }
-    </style>
-</head>
-<body>
-    <div class="header">
-        <h1>Henry Johnson</h1>
-        <a href="URL_TO_YOUR_CV.md">Full CV</a>
-    </div>
-    <div class="container">
-        <div class="left-column">
-            <h2>About Me</h2>
-            <p>Your position and a description of your interests</p>
-            <h2>Contact</h2>
-            <ul>
-                <li><a href="URL_TO_YOUR_LINKEDIN">LinkedIn</a></li>
-                <li><a href="URL_TO_YOUR_GITHUB">GitHub</a></li>
-            </ul>
-        </div>
-        <div class="right-column">
-            <h2>Projects</h2>
-            <!-- You can copy and paste the "project" div for each project you want to add. -->
-            <div class="project">
-                <h3>Project Name</h3>
-                <p>Project summary...</p>
-                <a href="URL_TO_PROJECT">Link to project</a>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
