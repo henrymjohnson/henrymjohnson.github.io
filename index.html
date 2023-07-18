@@ -17,6 +17,12 @@
         .content {
             display: flex;
             margin-top: 80px; /* Adjust this value according to the height of your header */
+            justify-content: center; /* Added to center the content */
+        }
+        .column-container {
+            max-width: 1000px; /* Set the maximum width for the container of the columns */
+            width: 100%; /* Make the container take full width until the maximum width is reached */
+            display: flex; /* Use Flexbox for the column container too */
         }
         .left {
             flex: 33%;
@@ -35,15 +41,17 @@
         <h1>Henry Johnson's Portfolio</h1>
     </div>
     <div class="content">
-        <div class="left">
-            <h2>About Me</h2>
-            <img src="assets/095C4578-D317-414E-A1DE-EC574AA573C9.jpeg" alt="Henry Johnson" style="width:33%">
-            <p>Henry is a data scientist and lover of economics, plants, mountain biking, and food. He specializes in machine learning, data mining, and statistical modeling.</p>
-        </div>
-        <div class="right">
-            <h2>My Work</h2>
-            <p>Here is a sample of my work:</p>
-            <a href="https://henrymjohnson.github.io/notebooks/Predicting%20Movie%20Genres%20from%20Movie%20Scripts.html">Classifying Movie Genres</a>
+        <div class="column-container"> <!-- Added this wrapper -->
+            <div class="left">
+                <h2>About Me</h2>
+                <img src="assets/095C4578-D317-414E-A1DE-EC574AA573C9.jpeg" alt="Henry Johnson" style="width:50%">
+                <p>Henry is a data scientist and lover of economics, plants, mountain biking, and food. He specializes in machine learning, data mining, and statistical modeling.</p>
+            </div>
+            <div class="right">
+                <h2>My Work</h2>
+                <p>Here is a sample of my work:</p>
+                <a href="https://henrymjohnson.github.io/notebooks/Predicting%20Movie%20Genres%20from%20Movie%20Scripts.html">Classifying Movie Genres</a>
+            </div>
         </div>
     </div>
 </body>
