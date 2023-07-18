@@ -1,42 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            color: #222222;
-        }
-        .header {
-            background-color: #f8f8f8;
-            text-align: center;
-            padding: 20px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-        }
-        .content {
-            display: flex;
-            margin-top: 80px;
-            justify-content: center;
-        }
-        .column-container {
-            max-width: 1000px;
-            width: 100%;
-            margin-top: 20px;
-            display: flex;
-        }
-        .left {
-            flex: 33%;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        .right {
-            flex: 67%;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="header">
@@ -53,7 +18,6 @@
             </div>
             <div class="right">
                 <h2>Projects</h2>
-                <p>Here is a sample of my work:</p>
                 <p>
                     <h3>Classifying Movie Genres</h3>
                     <p>Using a dataset of movie scripts, I built a model to predict the genre of a movie based on its script. I used a variety of natural language processing techniques to extract features from the scripts, and then compared using a KNN and various OVR (Naïve Bayes, Linear with Stochastic Gradient Descent, and Logistic Regression with SVD-Transformed Texts) to predict the genres. After this, I compared the models and found that the OVR with Naïve Bayes tended to perform the best. <a href="https://henrymjohnson.github.io/notebooks/Predicting%20Movie%20Genres%20from%20Movie%20Scripts.html">Notebook</a>.</p>
