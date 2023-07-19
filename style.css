@@ -18,8 +18,9 @@ body {
 
 .content {
   display: flex;
-  margin-top: 80px; 
+  margin-top: 80px;
   justify-content: center;
+  flex-direction: row;
 }
 
 .column-container {
@@ -35,13 +36,14 @@ body {
   padding: 20px;
   box-sizing: border-box;
   position: sticky;
-  top: 0;
+  top: 80px; /* height of the header */
 }
 
 .right {
   flex: 67%;
   padding: 20px;
   box-sizing: border-box;
+  margin-left: 33%; /* same as width of the left column */
 }
 
 .cv-content {
