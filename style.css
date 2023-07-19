@@ -7,17 +7,18 @@ body {
 
 .header {
   background-color: #f8f8f8;
-  border-bottom: 2px solid #222222;
+  border-bottom: 16px solid #222222;
   text-align: center;
   padding: 20px;
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 10; /* This makes sure the header stays on top */
 }
 
 .content {
   display: flex;
-  margin-top: 80px;
+  margin-top: 120px; /* 80px (existing value) + 16px (header border) + 20px (estimated header height) = 116px, rounded up to 120px for good measure */
   justify-content: center;
 }
 
