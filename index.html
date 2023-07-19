@@ -25,6 +25,19 @@
             <div class="right">
                 <h2>Projects</h2>
                 <p>
+                    <h3>Estimating the Impact of the 2018 Wine Tariffs</h3>
+                    <p>
+                        This research estimates a vector autoregression model for average wine prices across U.S. cities to assess the impact of tariff changes on the U.K., France, Germany, and Spain after they were enacted in October 2019. It uses impulse response functions to gauge how a one-unit impulse in the per-liter duty rate may effect the average wine price in the U.S. and the quantity of wine from various exporters to the U.S. It finds that a one-unit impulse in the duty rate levied against the bloc of countries impacted by the tariff results in a fall in the quantity of wine imported from those countries and that wine from the bloc of countries is substituted with wine from the top three exporters not included in the bloc. 
+                        <p>
+                            <a href="https://doi.org/10.18122/td.2021.boisestate">Paper</a>
+                            <br>
+                            <a href="notebooks/wine-price-time-series.html">Jupyter Notebook</a>
+                            <br>
+                            <a href="https://github.com/henrymjohnson/wine_analytics/">GitHub Repo</a>
+                        </p>
+                    </p>
+                </p>
+                <p>
                     <h3>Classifying Movie Genres</h3>
                     <p>
                         Using a dataset of movie scripts scraped from IMSDB and genres detailed in MovieLens, I linked the movie titles and release years from the sources using a fuzzy match and built a supervised learning model to multi-label classifier to predict the genres of a movie based on its script. I used a variety of natural language processing techniques to extract features from the scripts, and then compared using a KNN and various OVR (Naïve Bayes, Linear with Stochastic Gradient Descent, and Logistic Regression with SVD-Transformed Texts) to predict the genres. After this, I compared the models and found that the OVR with Naïve Bayes tended to perform the best. 
